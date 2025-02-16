@@ -1,0 +1,42 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+    body {
+        font-family: 'Vazir', sans-serif;
+    }
+    </style>
+</head>
+<body>
+time_api<br/>
+Sometimes it's work with vpn<br/><br/>
+<br/>
+car_api<br/>
+You can also use ==> 127.0.0.1:8000/car_api?id=23<br/><br/>
+==========<br/>
+{% if datetime %}
+    <p>{{ datetime }}</p>
+{% endif %}
+==========<br/>
+{% if moshakhasat %}
+    <table border="1">
+        <tr>
+            <td>Name</td><td>{{ name }}</td>
+        </tr>
+        <tr>
+            <td>Moshakhasat</td><td>{{ moshakhasat }}</td>
+        </tr>
+        <tr>
+            <td>karkhane</td><td>{{ karkhane }}</td>
+        </tr>
+        <tr>
+            <td>bazar</td><td>{{ bazar }}</td>
+        </tr>
+    </table>
+{% endif %}
+==========<br/>
+</body>
+</html>
